@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Student Signup</servlet-name>
+        <servlet-class>com.user.signup</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Student Login</servlet-name>
+        <servlet-class>com.user.login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Student Logout</servlet-name>
+        <servlet-class>com.user.logout</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>assessment_submission</servlet-name>
+        <servlet-class>com.assessment.assessment_submission</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Question Submission</servlet-name>
+        <servlet-class>com.management.submission</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>Management Login</servlet-name>
+        <servlet-class>com.management.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Management Logout</servlet-name>
+        <servlet-class>com.management.Logout</servlet-class>
+    </servlet>
+    
+    
+    <servlet-mapping>
+        <servlet-name>Student Signup</servlet-name>
+        <url-pattern>/Student_Panel/signup/signup.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Student Login</servlet-name>
+        <url-pattern>/Student_Panel/login/login.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Student Logout</servlet-name>
+        <url-pattern>/Student_Panel/logout.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>assessment_submission</servlet-name>
+        <url-pattern>/Student_Panel/assessment_submission.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Question Submission</servlet-name>
+        <url-pattern>/Management_Panel/database/submission/submit.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Management Login</servlet-name>
+        <url-pattern>/Management_Panel/login/login.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Management Logout</servlet-name>
+        <url-pattern>/Management_Panel/logout.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
